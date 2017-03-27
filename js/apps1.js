@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded',function(){
 
-  function move() {
+
+  function coursor() {
+      document.querySelector("#third").style.cursor = "url('images/hook.png'), auto";
+
+  }
+  coursor();
+
+    function move() {
       var elem = document.getElementById("myBar");
       var width = 10;
       var id = setInterval(frame, 10);
@@ -8,13 +15,13 @@ document.addEventListener('DOMContentLoaded',function(){
           if (width >= 100) {
               clearInterval(id);
               $('#first').hide();
-              $('#second').show();
+              $('#second').fadeIn(1000);
               var audio = new Audio("sounds/section2.mp3");
               audio.play();
               window.setTimeout(function(){
                   $('#second').fadeOut(1);
                   $('#third').fadeIn(1);
-            },500);
+            },50);
 
 
           } else {
