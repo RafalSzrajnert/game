@@ -294,7 +294,7 @@ h4{
 	border-radius: 30px;
 	position: absolute;
 	z-index: 2;
-	margin-top: 20vh;
+	margin-top: 15vh;
 	margin-left: 3vw;
 	}
 #rybak{
@@ -330,4 +330,16 @@ h4{
 	width: 50px;
 	height: 50px;
 	position: absolute;
+}
+/*   formularz   */
+
+form{
+	display: none;
+}
+#fourth{
+	width: 100vw;
+	height: 100vh;
+}
+.gameScore{
+	border: 3px solid black;
 }

@@ -29,8 +29,7 @@
 
 
     <section id="third">
-      <div id="fishLeftId" class="fishLeft"></div>
-      <div id="fishRightId" class="fishRight"></div>
+
         <div id="score">
           <div id="childOne">SCORE: </div>
 
@@ -39,6 +38,22 @@
         <div id="fisherIsland">
         <div id="island"></div>
         <div id="rybak"></div>
+        <div id="fishLeftId" class="fishLeft"></div>
+        <div id="fishRightId" class="fishRight"></div>
+
+
+              <form id="myForm" action="sql.php" method="POST">
+                   Scores:<br>
+                   <input id="scores" type="text" name="scores"><br>
+                   Nick:<br>
+                   <input id="nick" type="text" name="nick">
+
+                   <label>
+                     <input id="submit" type="submit">wyslij</input>
+                  </label>
+              </form>
+
+
         <div class="container"></div>
     </div>
 
@@ -48,6 +63,8 @@
     </section>
 
     <section id="fourth">
+    
+
     </section>
 </body>
 </html>
