@@ -164,10 +164,19 @@ section{
 
 }
 #second{
-	height: 100vh;
+	height: 2000px;
   width: 100vw;
-	background-size: 85%;
+	background-color: white;
+	z-index: 30;
 }
+#sectionTwoImg{
+	z-index: 50;
+}
+h1{
+
+	font-size: 60px;
+
+	}
 
 .lwy {
   width:90px;
@@ -230,7 +239,6 @@ display: flex;
 background-color: rgb(157,223,247);
 z-index: 0;
 position: relative;
-justify-content: flex-end;
 height: 100vh;
 width: 100vw;
 
@@ -241,7 +249,7 @@ width: 100vw;
 	background-color: rgb(234, 153, 153);
 	z-index: 4;
 	position: absolute;
-	margin-left: -80%;
+	margin-left: 10%;
 	padding: 5px;
 	border: 5px solid rgb(134, 131, 160);
 	font-family: "PokemonHollow", Arial, sans-serif;
@@ -266,7 +274,7 @@ h4{
 	font-family: "PokemonHollow", Arial, sans-serif;
 	font-weight: bold;
 	letter-spacing: 5px;
-	padding-left: 35vw;
+	padding-left: 20vw;
 	font-size: 60px;
 }
 #positionChild{
@@ -326,10 +334,12 @@ h4{
   100% { background-position:-768px 0 ; }
 }
 .fishRight {
-	background-color: pink;
-	width: 50px;
-	height: 50px;
+	background:url("../images/fish2.png");
+		width: 100px;
+	height: 83px;
 	position: absolute;
+	right: 0;
+	bottom:0;
 }
 /*   formularz   */
 
@@ -339,7 +349,35 @@ form{
 #fourth{
 	width: 100vw;
 	height: 100vh;
+	background: pink;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .gameScore{
-	border: 3px solid black;
+	border: 3px solid grey;
+	border-radius: 5px;
+}
+table{
+}
+h6, h7{
+	font-family: "PokemonHollow", Arial, sans-serif;
+	color: grey;
+	font-size: 30px;
+	margin-top: 1%;
+}
+a {
+	color: black;
+}
+#playAgain{
+	margin-top: 5%;
+	border-radius: 5px;
+	font-family:  Arial, sans-serif;
+	color: pink;
+	font-weight: bold;
+	height: 10vh;
+	width: 15vw;
+	background-color: rgb(212, 106, 106);
+	border: 3px solid grey;
 }
